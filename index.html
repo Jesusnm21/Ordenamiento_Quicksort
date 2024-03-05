@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <title>Quicksort</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="diseño">
+    <i style="--clr:#6ddef4;"></i>
+    <i style="--clr:#fffd44;"></i>
+    <i style="--clr:#00ff0a;"></i>
+    <form class="content-form" id="frmCalcula">
+<div id="stars"></div>
+<div id="stars2"></div>
+<div id="stars3"></div>
+<div class="section">
+  <div class="container">
+    <div class="row full-height justify-content-center">
+      <div class="col-12 text-center align-self-center py-5">
+        <div class="section pb-5 pt-5 pt-sm-2 text-center">
+          <h6 class="mb-0 pb-3"><span>Datos </span><span>Resultado</span></h6>
+                <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+                <label for="reg-log"></label>
+          <div class="card-3d-wrap mx-auto">
+            <div class="card-3d-wrapper">
+              <div class="card-front">
+                
+                <div class="center-wrap">
+                  <div class="section text-center">
+                    <h4 class="mb-4 pb-3">.::Ordenamiento Quicksort::.</h4>
+                    <div class="form-group">
+                        <input id="txtNumero" class="controless" type="number" placeholder="Numero de elementos a ordenar">
+                        <b class="input-icon uil uil-pen"></b>
+                    </div>	
+                    <button class="controles" id="botones" type="submit">Ingresar Elementos</button>
+                    <select id="ordenSelect" class="controles" style="display: none;">
+                      <option value="nada">--Tipo de ordenamiento--</option>
+                      <option value="ascendente">Ascendente</option>
+                      <option value="descendente">Descendente</option>
+                      </select>
+                      <button class="controles" id="ordenar" type="button" style="display: none;">Ordenar Elementos</button>
+                      </div>
+                    </div>
+                  </div>
+              <div class="card-back">
+                <div class="center-wrap">
+                  <div class="section text-center">
+                    <h4 class="mb-3 pb-3">Ordenamiento Completado:</h4>
+                    <h5 class="mb-3 pb-3">Arreglo Original:</h5>
+                    <h5 id="resultado"></h5>
+                    <h5 class="mb-3 pb-3">Arreglo ordenado:</h5>
+                    <h5 id="resultado2"></h5>
+                    <button class="controles" id="imprimir" type="button">Cancelar</button>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+</form>
+<script src="js/Quicksort.js"></script> 
+</div>
+</body>
+</html>
